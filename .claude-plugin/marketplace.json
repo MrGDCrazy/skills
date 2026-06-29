@@ -98,6 +98,171 @@
       "skills": [
         "./skills/webmcp-gen"
       ]
+    },
+    {
+      "name": "agent-experience",
+      "source": "./",
+      "description": "Audit the developer experience of a product, SDK, docs site, or SKILL.md by dropping multiple Claude subagents at it. Use when the user asks to audit agent experience, test a skill, audit docs for agents, check if a SDK is agent-friendly, or benchmark how painful onboarding is for an AI agent.",
+      "version": "0.0.1",
+      "author": {
+        "name": "Browserbase"
+      },
+      "category": "automation",
+      "keywords": ["agent-experience", "dx-audit", "developer-experience", "sdk-audit", "docs-audit", "evaluation"],
+      "strict": false,
+      "skills": [
+        "./skills/agent-experience"
+      ]
+    },
+    {
+      "name": "autobrowse",
+      "source": "./",
+      "description": "Self-improving browser automation via the auto-research loop. Iteratively runs a browsing task, reads the trace, and improves the navigation skill until it reliably passes. Use when you want to build or improve browser automation skills for specific website tasks.",
+      "version": "0.0.1",
+      "author": {
+        "name": "Browserbase"
+      },
+      "category": "automation",
+      "keywords": ["browser-automation", "self-improving", "auto-research", "stagehand", "iteration", "automation"],
+      "strict": false,
+      "skills": [
+        "./skills/autobrowse"
+      ]
+    },
+    {
+      "name": "browser-to-api",
+      "source": "./",
+      "description": "Turn a website's observable HTTP traffic into a best-effort OpenAPI 3.1 spec by analyzing a browser-trace capture. Use when the user wants to discover API endpoints from a browser session, build an OpenAPI doc from network traffic, or document a third-party site's XHR/fetch surface.",
+      "version": "0.0.1",
+      "author": {
+        "name": "Browserbase"
+      },
+      "category": "automation",
+      "keywords": ["openapi", "api-discovery", "network-traffic", "xhr", "browser-trace", "api-spec"],
+      "strict": false,
+      "skills": [
+        "./skills/browser-to-api"
+      ]
+    },
+    {
+      "name": "browser-use-to-stagehand",
+      "source": "./",
+      "description": "Migrate browser-use (Python) browser-automation scripts to Stagehand v3 (TypeScript) on Browserbase. Use when the user wants to convert, port, or migrate a browser-use Agent script to Stagehand, or move agentic browser automation onto Browserbase with more determinism.",
+      "version": "0.0.1",
+      "author": {
+        "name": "Browserbase"
+      },
+      "category": "automation",
+      "keywords": ["browser-use", "stagehand", "migration", "python-to-typescript", "browserbase", "determinism"],
+      "strict": false,
+      "skills": [
+        "./skills/browser-use-to-stagehand"
+      ]
+    },
+    {
+      "name": "company-research",
+      "source": "./",
+      "description": "Company discovery and deep research skill. Discovers target companies using Browserbase Search API, deeply researches each, and scores ICP fit — compiled into a scored research report and CSV. Use when the user wants to find companies to sell to, research prospects, or discover companies matching an ICP.",
+      "version": "0.0.1",
+      "author": {
+        "name": "Browserbase"
+      },
+      "category": "research",
+      "keywords": ["company-research", "icp", "prospecting", "sales-intelligence", "lead-research", "market-research"],
+      "strict": false,
+      "skills": [
+        "./skills/company-research"
+      ]
+    },
+    {
+      "name": "competitor-analysis",
+      "source": "./",
+      "description": "Competitor research and intelligence skill. Auto-discovers competitors via Browserbase Search API, deeply researches each, and compiles results into an HTML report with overview, per-competitor deep dives, feature/pricing matrix, and mentions feed. Use when the user wants to analyze competitors or build a competitive matrix.",
+      "version": "0.0.1",
+      "author": {
+        "name": "Browserbase"
+      },
+      "category": "research",
+      "keywords": ["competitor-analysis", "market-research", "competitive-intelligence", "benchmarking", "pricing-comparison"],
+      "strict": false,
+      "skills": [
+        "./skills/competitor-analysis"
+      ]
+    },
+    {
+      "name": "cookie-sync",
+      "source": "./",
+      "description": "Sync cookies from local Chrome to a Browserbase persistent context so the browse CLI can access authenticated sites. Use when the user wants to browse as themselves, sync cookies, or log into sites via Browserbase.",
+      "version": "0.0.1",
+      "author": {
+        "name": "Browserbase"
+      },
+      "category": "automation",
+      "keywords": ["cookies", "authentication", "chrome", "persistent-context", "session", "browserbase"],
+      "strict": false,
+      "skills": [
+        "./skills/cookie-sync"
+      ]
+    },
+    {
+      "name": "event-prospecting",
+      "source": "./",
+      "description": "Event prospecting skill. Extracts speakers from a conference page, filters their companies against your ICP, and deep-researches the best-fit people into a person-first prospecting report. Use when the user wants to find leads at a conference, research event speakers, or build a target list from an event page.",
+      "version": "0.0.1",
+      "author": {
+        "name": "Browserbase"
+      },
+      "category": "research",
+      "keywords": ["event-prospecting", "conference", "speakers", "sales", "icp", "prospecting"],
+      "strict": false,
+      "skills": [
+        "./skills/event-prospecting"
+      ]
+    },
+    {
+      "name": "fetch",
+      "source": "./",
+      "description": "Fetch HTML or JSON from static pages without a full browser session — inspect status codes, headers, follow redirects, or get page source for simple scraping. Use when JavaScript rendering and page interaction are not needed.",
+      "version": "0.0.1",
+      "author": {
+        "name": "Browserbase"
+      },
+      "category": "automation",
+      "keywords": ["fetch", "http", "html", "static-pages", "scraping", "headers", "redirect"],
+      "strict": false,
+      "skills": [
+        "./skills/fetch"
+      ]
+    },
+    {
+      "name": "search",
+      "source": "./",
+      "description": "Search the web and return structured results (titles, URLs, metadata) without a full browser session. Use when you need search results but not page content — prefer it over a browser for simple web searches.",
+      "version": "0.0.1",
+      "author": {
+        "name": "Browserbase"
+      },
+      "category": "automation",
+      "keywords": ["search", "web-search", "urls", "metadata", "results", "structured-search"],
+      "strict": false,
+      "skills": [
+        "./skills/search"
+      ]
+    },
+    {
+      "name": "ui-test",
+      "source": "./",
+      "description": "AI-powered adversarial UI testing via the browse CLI. Analyzes git diffs to test only what changed, or explores the full app to find bugs. Tests functional correctness, accessibility, responsive layout, and UX heuristics. Use when the user asks to test UI changes, QA a pull request, or run exploratory testing.",
+      "version": "0.0.1",
+      "author": {
+        "name": "Browserbase"
+      },
+      "category": "testing",
+      "keywords": ["ui-testing", "qa", "accessibility", "browser-automation", "adversarial", "stagehand", "testing"],
+      "strict": false,
+      "skills": [
+        "./skills/ui-test"
+      ]
     }
   ]
 }
